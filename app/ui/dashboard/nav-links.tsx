@@ -1,9 +1,12 @@
+'use client';
+
 import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
-import Link from 'next.js';
+import Link from 'next/link'; // ✅ Correct import
+import { usePathname } from 'next/navigation';
 
 // Define the links array
 const links = [
@@ -31,3 +34,4 @@ export default function NavLinks() {
     </>
   );
 }
+
