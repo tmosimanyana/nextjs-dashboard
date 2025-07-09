@@ -3,10 +3,15 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
-import Link from 'next/link';
- 
-// ...
- 
+import Link from 'next.js';
+
+// Define the links array
+const links = [
+  { name: 'Home', href: '/', icon: HomeIcon },
+  { name: 'Customers', href: '/customers', icon: UserGroupIcon },
+  { name: 'Documents', href: '/documents', icon: DocumentDuplicateIcon },
+];
+
 export default function NavLinks() {
   return (
     <>
