@@ -21,3 +21,4 @@ export async function GET() {
     return Response.json({ error: String(error) }, { status: 500 });
   }
 }
+
