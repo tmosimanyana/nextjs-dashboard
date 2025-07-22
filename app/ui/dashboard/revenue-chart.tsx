@@ -18,16 +18,20 @@ export default async function RevenueChart() { // Make component async, remove t
  
   return (
     <div>
-      <h2 className={`${lusitana.className} mb-4 text-xl`}>
-        <CalendarIcon className="inline-block w-5 h-5 mr-2" />
+      <h2 className={`${lusitana.className} text-xl font-bold mb-4 flex items-center`}>
+        <CalendarIcon className="h-5 w-5 mr-2" />
         Revenue Chart
       </h2>
-      <div className="chartContainer">
-        {/* Render your chart here using revenue, yAxisLabels, and topLabel */}
-        <pre>{JSON.stringify(revenue, null, 2)}</pre>
+      <div className="revenue-chart-container">
+        {/* Example: Render yAxisLabels and topLabel */}
+        <div>Top Label: {topLabel}</div>
+        <ul>
+          {yAxisLabels.map((label: string, idx: number) => (
+            <li key={idx}>{label}</li>
+          ))}
+        </ul>
+        {/* Render your chart here */}
       </div>
     </div>
   );
 }
- 
-
