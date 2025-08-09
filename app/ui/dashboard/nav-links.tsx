@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
-// ✅ Define your links array here
+// ✅ Define links array here
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
